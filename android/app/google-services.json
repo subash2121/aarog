@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "608120653842",
+    "firebase_url": "https://aarog-eb05a.firebaseio.com",
+    "project_id": "aarog-eb05a",
+    "storage_bucket": "aarog-eb05a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608120653842:android:8e01edeff3f3964a2430cb",
+        "android_client_info": {
+          "package_name": "com.vinithra.aarogg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608120653842-ju4s57vd6caoaeoc5qvi4mvdjqra75e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmUig6bEtXh7cIbCF8VKeWZ1t0RwNdcAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608120653842-ju4s57vd6caoaeoc5qvi4mvdjqra75e9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
