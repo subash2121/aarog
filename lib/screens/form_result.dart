@@ -1,4 +1,6 @@
 import 'package:aarog/bmi/input_page.dart';
+import 'package:aarog/screens/medicine.dart';
+import 'package:aarog/screens/notifications.dart';
 import 'package:aarog/screens/period_tracker.dart';
 import 'package:flutter/material.dart';
 import 'package:aarog/widgets/model.dart';
@@ -180,7 +182,11 @@ class _ResultState extends State<Result> {
                       fontSize: 30,
 
                     ),)),),
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return Medicine();
+                  }));
+                },
               ),
 
             ),
@@ -218,7 +224,11 @@ class _ResultState extends State<Result> {
 
                       ),),
                     )),),
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    return Notifications();
+                  }));
+                },
               ),
             ),
             SizedBox(
