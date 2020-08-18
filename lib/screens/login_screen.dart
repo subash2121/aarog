@@ -28,8 +28,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Hero(
                   tag: 'logo',
                   child:  Container(
-
-                    child: Icon(Icons.local_hospital,size: 200,),
+                    height: 200.0,
+                    child: Image.asset('images/icon.jpeg'),
                   ),
                 ),
               ),

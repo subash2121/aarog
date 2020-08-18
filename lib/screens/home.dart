@@ -44,9 +44,12 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Icon(Icons.local_hospital,
-              color: Colors.white,
-              size: 80.0,),
+              Hero(tag: 'logo', child: Container(child: Image.asset('images/icon.jpeg'),height: 60.0,),
+              ),
+
+//              Icon(Icons.local_hospital,
+//              color: Colors.white,
+//              size: 80.0,),
               SizedBox(
                 height: 20.0,
               ),

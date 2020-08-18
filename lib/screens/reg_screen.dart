@@ -27,8 +27,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 child: Hero(
                   tag: 'logo',
                   child: Container(
-                    //height: 200.0,
-                    child: Icon(Icons.local_hospital,size: 200.0,),
+                    height: 200.0,
+                    child: Image.asset('images/icon.jpeg'),
                   ),
                 ),
               ),
