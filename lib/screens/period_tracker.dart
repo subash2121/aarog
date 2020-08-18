@@ -126,7 +126,9 @@ class _HomePageState extends State<HomePage> {
           }),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () => Navigator.pushNamed(context, '/add_event'),
+        onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context){
+          return AddEventPage();
+        })),
       ),
     );
   }

@@ -71,7 +71,7 @@ class _ImageCaptureState extends State<ImageCapture> {
       // Select an image from the camera or gallery
       bottomNavigationBar: BottomAppBar(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.photo_camera),
@@ -86,33 +86,28 @@ class _ImageCaptureState extends State<ImageCapture> {
       ),
 
       // Preview the image and crop it
-      body: Column(
+      body: ListView(
         children: <Widget>[
 
-          ListView(
-            children: <Widget>[
+          if (_imageFile != null) ...[
 
-              if (_imageFile != null) ...[
+            Image.file(_imageFile),
 
-                Image.file(_imageFile),
-
-                Row(
-                  children: <Widget>[
-                    FlatButton(
-                      child: Icon(Icons.crop),
-                      onPressed: _cropImage,
-                    ),
-                    FlatButton(
-                      child: Icon(Icons.refresh),
-                      onPressed: _clear,
-                    ),
-                  ],
+            Row(
+              children: <Widget>[
+                FlatButton(
+                  child: Icon(Icons.crop),
+                  onPressed: _cropImage,
                 ),
+                FlatButton(
+                  child: Icon(Icons.refresh),
+                  onPressed: _clear,
+                ),
+              ],
+            ),
 
-                Uploader(file: _imageFile)
-              ]
-            ],
-          ),
+            Uploader(file: _imageFile)
+          ]
         ],
       ),
     );

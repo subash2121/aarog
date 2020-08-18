@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         '/reg':(context)=>RegistrationScreen(),
         '/login':(context)=>LoginScreen(),
         '/menu':(context)=>Result(),
-        '/add_event': (_) => AddEventPage(),
+        '/add_event': (context) => AddEventPage(),
         '/medicine':(context)=>Medicine(),
       },
     );
