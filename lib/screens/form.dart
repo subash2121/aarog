@@ -124,9 +124,9 @@ class _TestFormState extends State<TestForm> {
                       keyboardType: TextInputType.number,
                       validator: (input) {
                         final isDigitsOnly = int.tryParse(input);
-                        return isDigitsOnly == null
-                            ? 'Input needs to be digits only'
-                            : null;
+//                        return isDigitsOnly == null
+//                            ? 'Input needs to be digits only'
+//                            : null;
                       },
 
 

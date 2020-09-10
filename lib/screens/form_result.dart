@@ -113,9 +113,9 @@ class _ResultState extends State<Result> {
           //crossAxisAlignment: CrossAxisAlignment.center,
           //mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            SizedBox(
-              height: 20.0,
-            ),
+//            SizedBox(
+//              height: 20.0,
+//            ),
 
 
             Expanded(
@@ -123,7 +123,7 @@ class _ResultState extends State<Result> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   //Text('HEY ',style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.w200),),
-                  Flexible(child: Text(checkGenderr().toUpperCase(), style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.w200))),
+                  Flexible(child: Text('Welcome'.toUpperCase(), style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.w200))),
                   Text(' !',style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.w200),),
 
                 ],
@@ -137,10 +137,10 @@ class _ResultState extends State<Result> {
                     child: GestureDetector(
                       child: card(colour: Colors.white,cardChild: Container(
                           padding: EdgeInsets.symmetric(vertical: 20.0),
-                          child: Text(checkGender(),textAlign: TextAlign.center,style:
+                          child: Text('Gym or Period\nTracker',textAlign: TextAlign.center,style:
                         TextStyle(
                           color: Colors.lightBlueAccent,
-                          fontSize: 30,
+                          fontSize: 25,
 
                         ),)),),
                       onTap: (){
@@ -154,7 +154,7 @@ class _ResultState extends State<Result> {
 
                     child: GestureDetector(
                       child: card(colour: Colors.white,cardChild: Container(
-                        padding: EdgeInsets.symmetric(vertical: 20.0),
+                        padding: EdgeInsets.symmetric(vertical: 15.0),
                           child: Text('Physical\nFitness',textAlign: TextAlign.center,style:
                       TextStyle(
                         color: Colors.lightBlueAccent,
@@ -172,26 +172,29 @@ class _ResultState extends State<Result> {
 
               ),
             ),
-            Container(
-              child: GestureDetector(
-                child: card(colour: Colors.white,cardChild: Container(
-                    padding: EdgeInsets.symmetric(vertical: 20.0),
-                    child: Text('Medicine delivery',textAlign: TextAlign.center,style:
-                    TextStyle(
-                      color: Colors.lightBlueAccent,
-                      fontSize: 30,
+            Expanded(
+              flex:2,
+              child: Container(
+                child: GestureDetector(
+                  child: card(colour: Colors.white,cardChild: Container(
+                      padding: EdgeInsets.symmetric(vertical: 15.0),
+                      child: Text('Medicine delivery',textAlign: TextAlign.center,style:
+                      TextStyle(
+                        color: Colors.lightBlueAccent,
+                        fontSize: 30,
 
-                    ),)),),
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return Medicine();
-                  }));
-                },
+                      ),)),),
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context){
+                      return Medicine();
+                    }));
+                  },
+                ),
+
               ),
-
             ),
               Expanded(
-                flex: 2,
+                flex: 3,
                 child: Column(
                   //mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -215,7 +218,7 @@ class _ResultState extends State<Result> {
               flex: 2,
               child: GestureDetector(
                 child: card(colour: Colors.white,cardChild: Container(
-                    padding: EdgeInsets.symmetric(vertical: 20.0),
+                    padding: EdgeInsets.symmetric(vertical: 10.0),
                     child: Center(
                       child: Text('Reminder',textAlign: TextAlign.center,style:
                       TextStyle(
@@ -231,9 +234,7 @@ class _ResultState extends State<Result> {
                 },
               ),
             ),
-            SizedBox(
-              height: 30.0,
-            ),
+
 
 
 //            Text(model.age.toString(), style: TextStyle(fontSize: 22)),

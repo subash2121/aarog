@@ -4,8 +4,8 @@ import 'icon_content.dart';
 import 'card.dart';
 import 'results_page.dart';
 import 'calculator_brain.dart';
-const activeCardColour=Color(0xFF1D1E33);
-const inactiveCardColour=Color(0xFF111328);
+const activeCardColour=Colors.lightBlueAccent;
+const inactiveCardColour=Colors.black26;
 const bottomContainerColour=Color(0xFFEB1555);
 const bottomContainerHeight=80.0;
 const numberStyle=TextStyle(
@@ -57,6 +57,7 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlueAccent,
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
       ),
