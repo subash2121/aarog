@@ -2,15 +2,8 @@
 
 A new Flutter application.
 
-## Getting Started
+This application is develped using flutter and incorporates facilities that are usefull in peoples healthcare.
 
-This project is a starting point for a Flutter application.
+In this contemporary modern era with technology growing everyday there has been developments in almost all sectors. But with days rolling with advance technologies, there are always problems which go hand in hand. As we say, there are advancements in even the healthcare sector too. Different advancement combined together has never reached out. There are applications which can track periods, which can find your BMI and also maintain fitness of the body. Even, technology has grown so strong that we have the facility to deliver the required medicines at our doorstep for the people under medication. But even, with these enhancements there is always something missing with them. A smart health tracker gadget with specialized features like a centralized governing system of health care that maintain different datas in order to track the health status of the people. Remainder to alert them with pop ups, notifications during this pandemic situation so that people alert themselves to stay healthy. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It has become mandatory nowadays to stay fit with peace of mind rather than having a bag full of money. Regular exercise, gym along with a tracking system gives a good boost up for the body. Mobilized delivery system of tablets is also set. Finally, an app to access the gadget. This application is developed in flutter and based on dart programming language as it can be exported to android, ios at one go. It is to be hosted on Google’s firebase database. It combines many health monitoring and fitness tracker features in a single app that sends alert messages and reminders. Also stores a record of medicines of people taking regular medications. An application which combines everything under one place would become easily accessible for everyone. It makes people to become conscious about their physical fitness and maintain a healthy mind.
